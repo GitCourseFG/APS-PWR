@@ -1,0 +1,28 @@
+.historia__parallax-container{
+  background-image: url("../imagens/busto.jpg");
+  width: 100%;
+  height: 30rem;
+
+  position: relative;
+
+  min-height: 500px;
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.historia__parallax-img{
+  width: 100%;
+  height: 30rem;
+
+  position: absolute;
+  inset: 0;
+
+  object-fit: cover;
+}
+
+.historia__header{
+  width: 100%;
+  height: fit content;
+}

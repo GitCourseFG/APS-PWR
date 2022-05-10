@@ -1,0 +1,44 @@
+.demografico__header,
+.demografico__main,
+.demografico__main-section,
+.demografico__main-article{
+  width: 100%;
+  height: fit-content;
+}
+
+.demografico__header{
+  padding: 1rem 0;
+
+  background-color: var(--dark);
+}
+
+.demografico__header-name{
+  display: block;
+
+  color: #fff;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.demografico__main{
+  background-color: var(--primary);
+}
+
+.demografico__header-name,
+.demografico__main-container{
+  width: 95%;
+  height: fit-content;
+  max-width: 80rem;
+  padding: 2.5rem 0;
+  margin: 0 auto;
+}
+
+.demografico__main-article{
+  max-width: 25rem;
+  padding: 2rem 3.6rem;
+
+  border-radius: 0.7rem;
+  box-shadow: 0 3px 6px rgba(2, 2, 2, 0.16);
+  background-color: #fff;
+}

@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri&family=Roboto:wght@300;500;900&display=swap');
+
+:root{
+
+    --primary: #ffe999;
+    --secondary: #f6e6ce;
+    --soft: #fef1e0;
+    --dark: #f0bc2c;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    font-family: Roboto, Arial, sans-serif;
+}
+
+html {
+    font-size: 16px;
+}
+
+@media (max-width: 1200px){
+  html {
+    font-size: 90%;
+  }
+}
+
+@media (max-width: 1000px){
+  html {
+    font-size: 85%;
+  }
+}
+
+@media (max-width: 600px){
+  html {
+    font-size: 70%;
+  }
+}
