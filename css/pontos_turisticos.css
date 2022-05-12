@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  font-family:'Montserrat', Arial, Helvetica, sans-serif;
+  font-size:1.rem;
+  overflow-x:hidden;
+}
+
+:root{
+
+  --black-primary: #454545;
+  --black-secundary: #393939;
+  --black-dark: #000000;
+  --black-soft: #2e3639;
+}
+
+.banner_area{
+  width: 100%;
+  height: 100vh;
+}
+
+.banner{
+  background-image:url('../imagens/backgroudpaisagem.jpg');
+  background-size:cover;
+  background-position:top;
+  width: inherit;
+  height: 100%;
+  overflow:hidden;
+}
+
+.banner .banner-bg{
+  width: inherit;
+  height: 100%;
+
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.banner_tittle{
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items:center;
+
+  position: absolute;
+  top: 0;
+
+  color: #f1dd78;
+
+  font-size: 2.4rem;
+
+  width: 100%;
+  height: 100vh;
+}
+
+.banner_tittle span{
+  color: #ffffff;
+}
+
+.local.dark{
+  background: var(--black-primary);
+  color: white;
+}
+
+.local{
+  padding: 4rem;
+}
+
+.local_tittle{
+  text-align:center;
+  font-size: 2rem;
+  font-weight: 600;
+  padding-bottom: 2rem;
+}
+
+.local_body{
+  display: flex;
+
+  width: 80%;
+  margin: auto;
+  height: 400px;
+
+  padding: 2rem;
+}
+
+.local_body_text{
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.local_body_text p{
+  font-size: 1.2rem;
+  line-height: 2rem;
+  letter-spacing: 0.1rem;
+}
+
+.local_body_image{
+  margin: 0 auto;
+}
+
+.local_body_image .body-bg{
+
+  width: 621px;
+  height: 350px;
+  background-image: url('/imagens/aguas-claras.jpg');
+  background-size: contain;
+  box-shadow: 6px 5px 10px #333;
+}
+
+@media (max-width: 1300px){
+  .local_body{
+    flex-direction: column;
+  }
+
+  .local.dark .local_body .local_body_text{
+    align-self: flex-start;
+    justify-self: flex-start;
+  }
+
+}
