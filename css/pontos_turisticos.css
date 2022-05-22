@@ -11,17 +11,10 @@
 
 body {
   font-family:'Montserrat', Arial, Helvetica, sans-serif;
-  font-size:1.rem;
+  font-size:1rem;
   overflow-x:hidden;
 }
 
-:root{
-
-  --black-primary: #454545;
-  --black-secundary: #393939;
-  --black-dark: #000000;
-  --black-soft: #2e3639;
-}
 
 .banner_area{
   width: 100%;
@@ -65,11 +58,6 @@ body {
   color: #ffffff;
 }
 
-.local.dark{
-  background: var(--black-primary);
-  color: white;
-}
-
 .local{
   padding: 4rem;
 }
@@ -84,7 +72,6 @@ body {
 .local_body{
   display: flex;
 
-  width: 80%;
   margin: auto;
   height: 400px;
 
@@ -94,6 +81,7 @@ body {
 .local_body_text{
   margin: 0 auto;
   padding: 0 2rem;
+  width: 50%;
 }
 
 .local_body_text p{
@@ -106,23 +94,56 @@ body {
   margin: 0 auto;
 }
 
-.local_body_image .body-bg{
-
-  width: 621px;
-  height: 350px;
+.local_body_image1,
+.local_body_image2,
+.local_body_image3,
+.local_body_image4{
+  flex: 1;
+  width: 100%;
   background-image: url('/imagens/aguas-claras.jpg');
-  background-size: contain;
+  background-size: cover;
   box-shadow: 6px 5px 10px #333;
 }
+.local_body_image2{
+  background-image: url(/imagens/capeta_santa_rita.jpg);
+  background-position: center;
+}
+.local_body_image3{
+  background-image: url(/imagens/busto.jpg);
+}
+.local_body_image4{
+  background-image: url(/imagens/Stitio_do_Pica_Pau_Amarelo.jpg);
+}
 
-@media (max-width: 1300px){
+
+@media (max-width: 768px){
+  .banner_tittle{
+    font-size: 1.4rem;
+  }
+
+  .local{
+    padding: 2.5rem;
+  }
+
   .local_body{
     flex-direction: column;
+    padding: 0;
   }
 
-  .local.dark .local_body .local_body_text{
+  .local_body .local_body_text{
+    width: 100%;
     align-self: flex-start;
     justify-self: flex-start;
+    padding: 0;
   }
 
+  .local_body_text p{
+    padding-bottom: 2rem;
+  }
+
+  .local_body.wrapper{
+    flex-direction: column-reverse;
+  }
 }
+
+
