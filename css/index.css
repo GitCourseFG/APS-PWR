@@ -3,6 +3,7 @@
 :root{
 
     --primary: #ffe999;
+    --softPrimary: #ffe99923;
     --secondary: #f6e6ce;
     --soft: #fef1e0;
     --dark: #f0bc2c;
@@ -36,3 +37,51 @@ html {
     font-size: 70%;
   }
 }
+
+@keyframes floating {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(3px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes shadow-drop {
+  0% {
+    transform: translateZ(0);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+  100% {
+    transform: translateZ(50px);
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+  }
+}
+
+@keyframes expand-on-focus {
+  0% {
+    filter: blur(12px);
+    opacity: 0;
+    letter-spacing: -0.5em;
+  }
+  100% {
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in {
+  0% {
+    transform: translateZ(700px) translateY(300px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateZ(0) translateY(0);
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
