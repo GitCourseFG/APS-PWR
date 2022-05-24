@@ -8,26 +8,40 @@
   height: fit-content;
 }
 
-.home__header,
 .home__footer{
   padding: 1rem 0;
 
-  background-color: var(--dark);
+  background-color: var(--primary);
+}
+
+.home__header{
+  background: linear-gradient(90deg, rgba(255,233,153,1) 52%, rgba(255,233,153,0.09287464985994398) 100%);
+
+  position: relative;
+}
+
+.home__header-img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  position: absolute;
+  inset: 0;
+  z-index: -1;
 }
 
 .home__header-name{
   display: block;
 
-  color: #fff;
+  color: #000;
   text-decoration: none;
   font-size: 2rem;
   font-weight: bold;
-}
-.home__header-name:hover{
-  color: var(--soft);
+
+  animation: expand-on-focus 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 .home__main{
-  background-color: var(--primary);
+  background-color: var(--softPrimary);
 }
 
 .home__header-name,
@@ -36,8 +50,16 @@
   width: 95%;
   height: fit-content;
   max-width: 80rem;
-  padding: 2.5rem 0;
   margin: 0 auto;
+}
+
+.home__header-name,
+.home__footer-container{
+  padding: 2.5rem 0;
+}
+
+.home__main-container{
+  padding: 6rem 0 10rem;
 }
 
 .home__title{
@@ -47,12 +69,21 @@
 
 .home__main-slider{
     max-width: 65rem;
-    margin: 1.5rem auto;
+    margin: 4.5rem auto;
+}
+
+.home__about__text{
+  width: 90%;
+  margin: 2rem auto;
+
+  display: block;
+
+  font-size: 1.3rem;
 }
 
 .home__about,
 .home__cards-wrapper{
-  margin-top: 4rem;
+  margin-top: 10rem;
 }
 
 .carousel-image{
@@ -72,6 +103,24 @@
   gap: 1rem;
 }
 
+.card,
+.home__main-slider,
+.home__about{
+  visibility: hidden;
+}
+
+.card:nth-child(2){
+  animation-delay: 0.1s;
+}
+
+.card:nth-child(3){
+  animation-delay: 0.2s;
+}
+
+.card:nth-child(4){
+  animation-delay: 0.3s;
+}
+
 .card-image{
   width: auto;
   min-width: 100;
@@ -81,13 +130,14 @@
 }
 
 .home__footer-text{
-  color: #fff;
+  color: #000;
 
   text-align: center;
+  font-size: 1.5rem;
 }
 
 .home__footer-link{
-  color: #fff;
+  color: #000;
   text-decoration: none;
 
   transition: color .2s ease;
@@ -95,7 +145,11 @@
 }
 
 .home__footer-link:hover{
-  color: var(--soft)
+  color: #555;
+}
+
+.home__fade-in{
+  animation: slide-in 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 @media (max-width: 640px) {
